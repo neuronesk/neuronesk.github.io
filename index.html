@@ -1,13 +1,203 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Neuro Nesk</title>
-    </head>
-  <body>
-    <h1>Web oficial de Neuro Nesk</h1>
-    <img src="https://avatars.githubusercontent.com/u/207329393?v=4/">
-    <h2>Estamos en proceso de construccion por favor sean pacientes</h2>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuro_nesk - Redes Neuronales en IA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="icon" href="https://avatars.githubusercontent.com/u/207329393?v=4" type="image/png"  style= " border-radius: 50% ;">
+</head>
+<body>
+    <!-- Efecto de partículas -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+            <img src="https://avatars.githubusercontent.com/u/207329393?v=4" alt="Neuro_nesk Logo" class="logo-img">
+            <h1>Neuro<span>_nesk</span></h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href=" tecnologia">Tecnología</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#aplicaciones">Aplicaciones</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-content reveal">
+            <h2>Revolucionando la IA con Redes Neuronales Avanzadas</h2>
+            <p>Neuro_nesk desarrolla la próxima generación de inteligencia artificial mediante arquitecturas neuronales innovadoras que imitan el funcionamiento del cerebro humano.</p>
+            <a href="#tecnologia" class="btn">Explorar Tecnología</a>
+        </div>
+        <div class="hero-image"></div>
+    </section>
+
+    <!-- Sección de características -->
+    <section class="features" id="tecnologia">
+        <div class="section-title reveal">
+            <h2>Tecnología Neuro_nesk</h2>
+            <p>Nuestras redes neuronales patentadas ofrecen un rendimiento sin precedentes en procesamiento de datos complejos y aprendizaje automático.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card reveal">
+                <div class="feature-icon">⚡</div>
+                <h3>Velocidad Exponencial</h3>
+                <p>Arquitecturas optimizadas que procesan datos hasta 10 veces más rápido que las redes neuronales convencionales.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon">🧠</div>
+                <h3>Aprendizaje Profundo</h3>
+                <p>Capacidad de aprendizaje autónomo mediante capas ocultas que simulan la neuroplasticidad cerebral.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon">🔍</div>
+                <h3>Reconocimiento de Patrones</h3>
+                <p>Identificación precisa de patrones complejos en grandes volúmenes de datos no estructurados.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de red neuronal animada -->
+    <section class="neural-network">
+        <div class="section-title reveal">
+            <h2>Arquitectura Neuronal</h2>
+            <p>Visualiza cómo nuestras redes procesan información mediante conexiones neuronales dinámicas.</p>
+        </div>
+        <div class="network-container">
+            <div class="network" id="neuralNetwork">
+                <!-- Las neuronas y conexiones estan generadas en JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de productos -->
+    <section class="products" id="productos">
+        <div class="section-title reveal">
+            <h2>Nuestros Productos</h2>
+            <p>Soluciones de IA basadas en redes neuronales para diversas industrias y aplicaciones.</p>
+        </div>
+        <div class="products-grid">
+            <div class="product-card reveal">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=765&q=80');"></div>
+                <div class="product-info">
+                    <h3>NeuroCore X1</h3>
+                    <p>Procesador neuronal dedicado para aplicaciones de aprendizaje profundo y visión por computadora.</p>
+                    <div class="product-specs">
+                        <div class="spec-item">
+                            <span class="spec-name">Neuronas:</span>
+                            <span>1.2 billones</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-name">Velocidad:</span>
+                            <span>128 TFLOPS</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-name">Memoria:</span>
+                            <span>24GB HBM3</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card reveal">
+                <div class="product-image" style="background-image: url('https://www.databot.es/wp-content/uploads/2023/10/deepmind.jpeg');"></div>
+                <div class="product-info">
+                    <h3>DeepMind NX</h3>
+                    <p>Sistema integrado de IA para diagnóstico médico y análisis de imágenes con precisión del 99.7%.</p>
+                    <div class="product-specs">
+                        <div class="spec-item">
+                            <span class="spec-name">Capas:</span>
+                            <span>512 profundas</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-name">Precisión:</span>
+                            <span>99.7%</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-name">Entrenamiento:</span>
+                            <span>2M imágenes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card reveal">
+                <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1639762681057-408e52192e55?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80');"></div>
+                <div class="product-info">
+                    <h3>AutoSynth Q</h3>
+                    <p>Red generativa adversarial para creación de contenido multimedia y diseño asistido por IA.</p>
+                    <div class="product-specs">
+                        <div class="spec-item">
+                            <span class="spec-name">Resolución:</span>
+                            <span>8K UHD</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-name">Estilos:</span>
+                            <span>1,200+</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-name">Velocidad:</span>
+                            <span>60 fps</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto">
+        <div class="footer-content">
+            <div class="footer-column reveal">
+                <h3>Neuro_nesk</h3>
+                <p>Líder en desarrollo de redes neuronales avanzadas para aplicaciones de inteligencia artificial.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column reveal">
+                <h3>Productos</h3>
+                <ul>
+                    <li><a href="#">NeuroCore Series</a></li>
+                    <li><a href="#">DeepMind Medical</a></li>
+                    <li><a href="#">AutoSynth Creative</a></li>
+                    <li><a href="#">NeuroCloud API</a></li>
+                    <li><a href="#">Edge AI Solutions</a></li>
+                </ul>
+            </div>
+            <div class="footer-column reveal">
+                <h3>Recursos</h3>
+                <ul>
+                    <li><a href="#">Documentación</a></li>
+                    <li><a href="#">Casos de Estudio</a></li>
+                    <li><a href="#">Investigación</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Soporte</a></li>
+                </ul>
+            </div>
+            <div class="footer-column reveal">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><a href="#">neuro-nesk@gmail.com</a></li>
+                    <li><a href="#">+1 (555) 123-4567</a></li>
+                    <li><a href="#">Silicon Valley, CA</a></li>
+                    <li><a href="#">Trabaja con Nosotros</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright reveal">
+            <p> Neuro_nesk. Todos los derechos reservados para MaielPlay.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
